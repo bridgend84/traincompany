@@ -13,6 +13,6 @@ public class PassengerTrain extends TrainWithPassengers{
                 PASSENGER_TRAIN_COST_PER_MONTH,
                 numberOfCoaches,
                 BASE_TICKET_PRICE,
-                new PassengerCalculator(PASSENGER_TRAIN_COST_PER_MONTH, numberOfCoaches, BASE_TICKET_PRICE));
+                new PassengerCalculator());
     }
 }
