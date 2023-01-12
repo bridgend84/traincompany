@@ -12,7 +12,7 @@ public class FreightTrain extends Train{
         super(
                 productionYear,
                 FREIGHT_TRAIN_COST_PER_MONTH,
-                new FreightCalculator(cargo, FREIGHT_TRAIN_COST_PER_MONTH));
+                new FreightCalculator());
         this.cargo = cargo;
     }
     public Cargo getCargo() {

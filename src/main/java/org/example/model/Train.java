@@ -20,7 +20,11 @@ public abstract class Train {
     }
 
     public BigDecimal getMonthlyRevenue() {
-        return revenueCalculator.getMonthlyRevenue();
+        return revenueCalculator.getMonthlyRevenue(this);
+    }
+
+    public BigDecimal getCostPerMonth() {
+        return costPerMonth;
     }
 
     @Override

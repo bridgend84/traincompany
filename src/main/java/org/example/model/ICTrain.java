@@ -1,6 +1,6 @@
 package org.example.model;
 
-import org.example.revenuecalculator.PassengerCalculator;
+import org.example.revenuecalculator.ICCalculator;
 
 import java.math.BigDecimal;
 import java.time.Year;
@@ -15,6 +15,6 @@ public class ICTrain extends TrainWithPassengers{
                 IC_TRAIN_COST_PER_MONTH,
                 Math.min(numberOfCoaches, MAX_NUMBER_OF_IC_COACHES),
                 BASE_TICKET_PRICE.add(IC_TICKET_EXTRA_FEE),
-                new PassengerCalculator(IC_TRAIN_COST_PER_MONTH, Math.min(numberOfCoaches, MAX_NUMBER_OF_IC_COACHES), BASE_TICKET_PRICE.add(IC_TICKET_EXTRA_FEE)));
+                new ICCalculator());
     }
 }
